@@ -1,13 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Poppins", sans-serif;
+}
+li {
+  @apply p-1.5 
+  font-light       
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bounce {
+  animation: bounce 1s infinite alternate;
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-3px);
+  }
+} 
+
+
+@layer components {
+  .searchBtn {
+    @apply px-3 md:px-6 inline-flex justify-center items-center bg-darkBlue text-white font-medium
+    hover:bg-navy cursor-pointer text-sm md:text-base transition-all ease-out duration-1000 hover:translate-x-1;
+  }
+  .closeField {
+    @apply px-3  inline-flex items-center text-navy transform transition-all animate-pulse 
+    duration-1000 cursor-pointer;
+  }
+  .searchInput {
+    @apply w-full px-2 py-2 xs:py-2.5 xl:px-4  focus:outline-none text-base text-navy placeholder-darkBlue placeholder:text-xs
+    lg:placeholder:text-sm focus-within:text-navy;
+  }
+  .searchIcon {
+    @apply px-2 inline-flex items-center text-navy
+    cursor-pointer;
+  }
+  .heading {
+    @apply p-1 lg:mb-3 text-2xl md:text-3xl hover:tracking-tighter md:tracking-[6px] lg:hover:tracking-[20px] 
+    transition-all duration-1000 ease-in-out text-navy cursor-pointer
+  }
+
+  .navbar {
+    @apply px-2 flex gap-1 items-center justify-center transition-all duration-200 ease-in-out hover:bg-darkBlue hover:animate-pulse rounded-md text-sm xl:text-base
+  }
+
+  .cards {
+    @apply mx-auto w-72 text-center flex flex-col gap-3 bg-[#F6F9FC] border border-lightBlue 
+     text-navy rounded-xl shadow-xl;
+  }
+  .cardsTitle {
+    @apply px-9 py-2 text-center items-center justify-center font-medium text-base;
+  }
+  .cardsPara {
+    @apply text-center p-4 font-light;
+  }
+  .cardsHover {
+    @apply transition ease-in-out delay-150 hover:-translate-y-3 hover:scale-100 duration-300;
+  }
 }
