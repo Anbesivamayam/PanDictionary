@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Synonyms = ({response}) => {
-  console.log(response)
+  // console.log(response)
   return (
     <main className=''>
         {/* {response.map(val => val.meanings.map(means => means.definitions.map(def => {
@@ -12,8 +12,8 @@ const Synonyms = ({response}) => {
           ))
         })))}  */}
 
-    <p>{response[0].meanings.synonyms}</p>
-   { console.log(response[0].meanings.length)}
+    {/* <p>{response[0].meanings.synonyms}</p> */}
+   {/* { console.log(response[0].meanings.length)} */}
     
     {/* <p>{response[0].origin}</p> */}
 

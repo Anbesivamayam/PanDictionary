@@ -25,19 +25,18 @@ const Meanings = ({ response }) => {
             //     </p>
             //    )}  */}
             // </div>
-            <div className="w-full flex flex-row p-4 shadow-xl border-[1px] mb-2 hover:skew-y-1 duration-500 transition-all ease-in-out ">
+            <div className="w-full flex flex-row p-4 shadow-xl border-[1px] mb-2 hover:skew-y-1 duration-500
+            rounded-lg transition-all ease-in-out ">
               <div key={index} className="w-full space-y-2 ">
                 <p className="gap-2 text-start text-darkBlue">
-                  {" "}
                   <span className=" text-navy font-medium">Meaning: </span>
                   {def.definition}
                 </p>
                 {def.example && (
-                  <div className="text-start">
+                  <div key={index} className="text-start">
                     <p className="text-navy font-medium">
-                      Example:{" "}
+                      Example:
                       <span className="font-normal text-black">
-                        {" "}
                         {def.example}
                       </span>
                     </p>

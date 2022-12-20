@@ -21,7 +21,28 @@ li {
     transform: translateY(-3px);
   }
 } 
+ /* scrollbar */
+ /* width */
+::-webkit-scrollbar {
+  width: 10px;
 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #A6C1AE; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #35848C; 
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 
 @layer components {
   .searchBtn {
@@ -33,7 +54,7 @@ li {
     duration-1000 cursor-pointer;
   }
   .searchInput {
-    @apply w-full px-2 py-2 xs:py-2.5 xl:px-4  focus:outline-none text-base text-navy placeholder-darkBlue placeholder:text-xs
+    @apply w-full px-2 py-2 xs:py-2.5 xl:px-4 focus:outline-none text-base text-navy placeholder-darkBlue placeholder:text-xs
     lg:placeholder:text-sm focus-within:text-navy;
   }
   .searchIcon {

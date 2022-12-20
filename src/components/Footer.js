@@ -87,10 +87,29 @@ const resources = [
   },
  
 ];
+const community = [
+  {
+    name: "Code of Conduct",
+    link: "https://github.com/facebook/react/blob/main/CODE_OF_CONDUCT.md",
+    icon: IoIosArrowForward,
+  },
+  {
+    name: "Community Resources",
+    link: "https://reactjs.org/community/support.html",
+    icon: IoIosArrowForward,
+  },
+  {
+    name: "FAQ",
+    link: "https://policies.google.com/faq?hl=en-US",
+    icon: IoIosArrowForward,
+  },
+
+ 
+];
 
 const Footer = () => {
   return (
-    <div
+    <div 
       name="footer"
       className="w-full mt-12 bg-[#202020] text-gray-300 py-1 px-2"
     >
@@ -140,6 +159,22 @@ const Footer = () => {
             </ul>
           ))}
         </div>
+        <div className="mb-2">
+          <h6 className="font-bold uppercase pt-2 ml-2 mb-2">Community</h6>
+          {community .map((data) => (
+            <ul key={data.name} className="cursor-pointer ">
+              <li className="flex justify-start items-center">
+                <span className=" text-white mr-1">
+                  <IoIosArrowForward />
+                </span>
+                <a href={data.link} target="_blank">
+                  {data.name}
+                </a>
+              </li>
+            </ul>
+          ))}
+        </div>
+        {/* {subscribre} */}
         <div className="col-span-2 pt-8 md:pt-2 px-4">
           <p className="font-bold uppercase ">
             Subscribe to our Library newsletter
@@ -147,24 +182,24 @@ const Footer = () => {
           <p className="py-4 ">
             The latest news, articles, and resources, sent to your inbox weekly.
           </p>
-          <form className="flex flex-col sm:flex-row">
+          <form className="flex flex-col sm:flex-row text-navy ">
             <input
-              className="w-full p-2 mr-4 rounded-md mb-4 "
+              className="w-full p-2 mr-4 rounded-md mb-4 focus:outline-none text-sm"
               type="email"
               placeholder="Enter email.."
             />
-            <button className="p-2 mb-4 searchBtn rounded-lg font-light">
+            <button className="p-2 mb-4 searchBtn rounded-lg font-light text-sm">
               Subscribe
             </button>
           </form>
         </div>
       </div>
       <div className="mx-12 flex flex-col md:flex-row justify-center md:justify-between items-center gap-2">
-        <div className="flex flex-col md:flex-row justify-center items-center gap-3">
-        <p className="py-3 ">2022 &#169; PanDictionary</p>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-3 tracking-widest text-sm">
+        <p className="py-3 ">2022 &#169; PanDictionary. LLC</p>
         <p className="text-center">All rights reserved</p>
         </div>
-        <p className="text-center">Website Created by Arun Prasad</p>
+        <p className="text-center ">Developed by Arun Prasad</p>
         <div className="flex gap-4 text-2xl py-2">
         
           <a href="https://www.facebook.com/" target="_blank">
@@ -190,31 +225,7 @@ const Footer = () => {
         </div>
        
       </div>
-      {/* <div className="flex flex-col md:flex-row justify-between items-center py-2">
-        <p className="py-3 ">2022 &#169; Panda.LLC. All rights reserved by Arun Prasad V</p>
-        <div className="flex gap-4 text-2xl py-2">
-          <a href="https://www.facebook.com/" target="_blank">
-            {" "}
-            <FaFacebook />{" "}
-          </a>
-          <a href="https://www.instagram.com/" target="_blank">
-            {" "}
-            <FaInstagram />{" "}
-          </a>
-          <a href="https://twitter.com/i/flow/login" target="_blank">
-            {" "}
-            <FaTwitter />
-          </a>
-          <a href="https://www.twitch.tv/" target="_blank">
-            {" "}
-            <FaTwitch />{" "}
-          </a>
-          <a href="https://github.com/" target="_blank">
-            {" "}
-            <FaGithub />{" "}
-          </a>
-        </div>
-      </div> */}
+   
     </div>
   );
 };

@@ -11,7 +11,7 @@ const Title = ({ response }) => {
 
   const [playing, toggle] = useAudio(response[0].phonetics[0].audio);
   return (
-    <main className="text-navy mt-4">
+    <main className="text-navy mt-2">
       <div>
         <section className="p-1 flex items-center">
           <p className="text-5xl font-semibold">
