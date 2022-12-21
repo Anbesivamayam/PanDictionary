@@ -7,6 +7,8 @@ const App = () => {
     <main className="w-full h-full ">
       {/* {github homepage for package json} */}
       {/* "homepage": "https://anbesivamayam.github.io/PanDictionary", */}
+      {/* "predeploy": "npm run build",
+    "deploy": "gh-pages -d build", */}
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
