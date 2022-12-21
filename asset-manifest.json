@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/PanDictionary/static/css/main.529d309a.css",
+    "main.js": "/PanDictionary/static/js/main.c41ea070.js",
+    "static/media/lib 3.png": "/PanDictionary/static/media/lib 3.08a07937192d8ad1a57d.png",
+    "static/media/header.png": "/PanDictionary/static/media/header.a6df572d5562cab009c0.png",
+    "static/media/book.jpg": "/PanDictionary/static/media/book.dbebb6ccae4148578da7.jpg",
+    "static/media/sketch 6.png": "/PanDictionary/static/media/sketch 6.27f1ebed0f8045cdf259.png",
+    "static/media/sketch 2.png": "/PanDictionary/static/media/sketch 2.2089788f90a44fa90025.png",
+    "static/media/sketch 8.png": "/PanDictionary/static/media/sketch 8.8593126f527ec1ca1258.png",
+    "static/media/sketch 3.png": "/PanDictionary/static/media/sketch 3.3dda046498160ffb2643.png",
+    "static/media/Lib5.jpg": "/PanDictionary/static/media/Lib5.67fcd117e32de19b5f55.jpg",
+    "index.html": "/PanDictionary/index.html",
+    "main.529d309a.css.map": "/PanDictionary/static/css/main.529d309a.css.map",
+    "main.c41ea070.js.map": "/PanDictionary/static/js/main.c41ea070.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.529d309a.css",
+    "static/js/main.c41ea070.js"
+  ]
+}
