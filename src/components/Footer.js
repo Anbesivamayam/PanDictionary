@@ -113,7 +113,7 @@ const Footer = () => {
       name="footer"
       className="w-full mt-12 bg-[#202020] text-gray-300 py-1 px-2"
     >
-      <div className="max-w-[1240px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8 text-base md:text-sm">
+      <div className="max-w-[1240px] xl:max-w-[1600px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8 text-base md:text-sm">
         <div className="mb-2">
           <h6 className="font-bold uppercase pt-2 ml-2 mb-2">About</h6>
           {about.map((field1) => (
@@ -194,7 +194,9 @@ const Footer = () => {
           </form>
         </div>
       </div>
-      <div className="mx-12 flex flex-col md:flex-row justify-center md:justify-between items-center gap-2">
+
+      {/* {Footer} */}
+      <div className="mx-14 xl:px-24 flex flex-col md:flex-row justify-center md:justify-between items-center gap-2">
         <div className="flex flex-col md:flex-row justify-center items-center gap-3 tracking-widest text-sm">
         <p className="py-3 ">2022 &#169; PanDictionary. LLC</p>
         <p className="text-center">All rights reserved</p>
