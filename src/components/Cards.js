@@ -13,7 +13,7 @@ const Cards = () => {
     // <main className="bg-[url('../images/blue bg.jpg')] bg-no-repeat bg-cover bg-center bg-fixed">
     <main className="mt-8">
         <section className="text-center">
-            {/* <img src={blueImg} alt="" /> */}
+            {/* <img src={blueImg} alt="blueimg" /> */}
             {/* <img src={spinImg} className="animate-spin w-32" alt="" /> */}
             <p className="heading inline-flex">
           Make your Words Meaningful! 
@@ -22,7 +22,7 @@ const Cards = () => {
       <section className="max-w-[1240px] xl:max-w-[1440px] mx-auto py-7 w-full grid sm:grid-cols-1 lg:grid-cols-4 gap-3">
         <div className="cards cardsHover">
           <div className="cardsTitle"><p className="">Finally a dictionary with a soul</p></div>
-          <div><img src={CardImg1} className="w-full h-40 duration-1000 bounce" alt="" /></div>
+          <div><img src={CardImg1} className="w-full h-40 duration-1000 bounce" alt="CardImg1" /></div>
           <div className="cardsPara"><p>
             Our definitions were written by humans, for humans. Each word has a
             friendly explanation that makes it easy to remember.
